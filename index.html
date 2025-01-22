@@ -16,6 +16,28 @@
  <p>Grow your social presence with Meta Verified – a new subscription
  <br>bundle available for creators and businesses on Instagram and <br>Facebook.
  </p>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{your-app-id}',
+      cookie     : true,
+      xfbml      : true,
+      version    : '{api-version}'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
  <p class=sign-up>Sign up now for creators</p>
  <p><span class=fw-semibold>Are you a business?</span> Get more information on</p>
  <a href=# class=business-info>Meta support for businesses</a>
